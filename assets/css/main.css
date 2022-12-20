@@ -1,0 +1,109 @@
+@import url("../fonts/Montserrat.css");
+
+:root {
+	--text: #2e2722;
+	--font: Montserrat, sans-serif;
+	--themeColor: #2A5C5D;
+    --top-nav-color: #fff;
+}
+body {
+    font-family: var(--font);
+    color:var(--text);
+}
+body.offcanvas-active{
+	overflow:hidden;
+}
+
+.offcanvas-header{ display:none; }
+
+.screen-darken{
+	height: 100%;
+	width:0%;
+	z-index: 30;
+	position: fixed;
+	top: 0;
+	right: 0;
+	opacity:0;
+	visibility:hidden;
+	background-color: rgba(34, 34, 34, 0.6);
+	transition:opacity .2s linear, visibility 0.2s, width 2s ease-in;
+}
+
+.screen-darken.active{
+	z-index:10; 
+	transition:opacity .3s ease, width 0s;
+    opacity:1;
+    width:100%;
+    visibility:visible;
+}
+
+/* ============ mobile view ============ */
+@media all and (max-width: 991px) {
+	
+	.offcanvas-header{ display:block; }
+
+	.mobile-offcanvas{
+		visibility: hidden;
+		transform:translateX(-100%);
+	    border-radius:0; 
+		display:block;
+	    position: fixed;
+	    top: 0; left:0;
+	    height: 100%;
+	    z-index: 1200;
+	    width:80%;
+	    overflow-y: scroll;
+	    overflow-x: hidden;
+	    transition: visibility .3s ease-in-out, transform .3s ease-in-out;
+	}
+
+	.mobile-offcanvas.show{
+		visibility: visible;
+    	transform: translateX(0);
+	}
+	.mobile-offcanvas .container, .mobile-offcanvas .container-fluid{
+		display: block;
+	}
+
+}	
+/* ============ mobile view .end// ============ */
+
+.slider-main .item {
+    min-height: 730px;
+}
+.slide-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1.1;
+    padding-bottom: 80px;
+    color: #fff;
+}
+.nav-links .nav-link {
+    font-size: .9rem;
+    color: var(--top-nav-color);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.top-contact {
+    color: var(--top-nav-color);
+}
+.arrow-down svg {
+    stroke: #fff;
+    width: 14px;
+    height: 7px;
+}
+.top-contact__phone {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.top-contact__address {
+    font-weight: 300;
+    font-size: .9rem;
+}
+
+.main-menu .nav-link {
+    color:var(--top-nav-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding-right: 1rem!important;
+}
