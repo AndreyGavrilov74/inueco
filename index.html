@@ -16,10 +16,10 @@
                 <div class="logo me-5">
                     <img src="assets/image/logo.png" width="219" height="125" />
                 </div>
-                <div class="top">
+                <div class="top w-100">
                     <button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button">  Show navbar </button>
                     <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-none">
-                        <div class="d-flex flex-column">
+                        <div class="d-flex flex-column w-100">
                             <div class="top-links py-3">
                                 <div class="row">
                                     <div class="col-12 col-lg-6">
@@ -43,7 +43,7 @@
                                     </div>
                                     <div class="col-12 col-lg-4">
                                         <div class="top-contact">
-                                            <div class="d-flex align-items-center">
+                                            <div class="d-flex align-items-center justify-content-end">
                                                 <div class="top-contact__value me-4 text-end">
                                                     <div class="top-contact__phone">
                                                         +7 (351) 214-41-11
@@ -62,22 +62,36 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between ms-2">
+                            <div class="d-flex justify-content-between ms-2 align-items-center">
                                 <ul class="navbar-nav main-menu">
                                     <li class="nav-item active"> <a class="nav-link" href="#">Университет </a> </li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Абитуриенту </a></li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Студенту </a></li>
-                                    <li class="nav-item dropdown">
+                                    <li class="nav-item dropdown  has-megamenu">
                                         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Наука </a>
-                                        <ul class="dropdown-menu">
-                                        <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                                        <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                                        <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
-                                        </ul>
+                                        <div class="dropdown-menu megamenu" role="menu">
+                                            Nhis is content of megamenu. <br>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                                            consequat.
+                                        </div>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Журнал </a></li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Контакты </a></li>
                                 </ul>
+                                <div class="d-flex">
+                                    <div class="me-4">
+                                        <svg class="icon-action text-white">
+                                            <use xlink:href="assets/image/sprite.svg#visible"></use>
+                                        </svg>
+                                    </div>
+                                    <div>
+                                        <svg class="icon-action text-white">
+                                            <use xlink:href="assets/image/sprite.svg#search"></use>
+                                        </svg>
+                                    </div>
+                                </div>
                             </div>
                         </div>                     
                         
@@ -86,7 +100,7 @@
             </div>
         </div>
     </div>
-    <div class="slider-main">
+    <div class="slider-main position-relative">
         <div class="item d-flex flex-column justify-content-end" style="background: url('assets/image/bg_slide.jpg') no-repeat center center;">
             <div class="slide-content">
                 <div class="container">
@@ -99,6 +113,143 @@
                     </div>
                 </div>
             </div>            
+        </div>
+        <div class="slider-counter position-absolute start-0 end-0">
+            <div class="container">
+                <div class="d-flex justify-content-end text-white align-items-center">
+                    <div class="slider-num d-flex align-items-center me-3">
+                        <div class="slider-num__current">01</div>
+                        <div class="slider-num__progress mx-2">
+                            <span class="slider-num__line"></span>
+                            <span class="slider-num__line-current"></span>
+                        </div>
+                        <div class="slider-num__all">
+                            05
+                        </div>
+                    </div>
+                    <div class="slider-nav d-flex">
+                        <div class="arrow-slider arrow-slider__left me-2">
+                            <svg>
+                                <use xlink:href="assets/image/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                        <div class="arrow-slider arrow-slider__right">
+                            <svg>
+                                <use xlink:href="assets/image/sprite.svg#arrow"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="news" class="page-block">
+        <div class="container">
+            <h2 class="title-block mb-5">
+                Новости университета
+            </h2>
+            <div class="news-main">
+                <div class="news-main__top mb-5">
+                    <div class="item-card position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/news_first.jpg);">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Праздничные мероприятия в День народного единства в г. Челябинске</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/news_first.jpg);">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold">
+                                <a href="/" class="stretched-link text-white text-decoration-none">СПО «PoweR» рассказал историю праздника «Хэллоуин»</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/news_first.jpg);">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold">
+                                <a href="/" class="stretched-link text-white text-decoration-none">МК по здоровому образу жизни проведен в ЮУТУ</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/news_first.jpg);">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Студентка ЮУТУ на методическом онлайн-вебинаре по финансовой грамотности</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item-card position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/news_first.jpg);">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Лучшая законотворческая инициатива от студентки ЮУТУ</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mb-5">
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="iten-news position-relative">
+                            <div class="item-news__date fs-7 fw-light mb-2">
+                                2 ноября 2022
+                            </div>
+                            <div class="item-news__title mb-3">
+                                Праздничные мероприятия в День народного единства в г. Челябинске
+                            </div>
+                            <div class="item-news__link">
+                                <a class="stretched-link" href="/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="iten-news position-relative">
+                            <div class="item-news__date fs-7 fw-light mb-2">
+                                2 ноября 2022
+                            </div>
+                            <div class="item-news__title mb-3">
+                                Праздничные мероприятия в День народного единства в г. Челябинске
+                            </div>
+                            <div class="item-news__link">
+                                <a class="stretched-link" href="/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="iten-news position-relative">
+                            <div class="item-news__date fs-7 fw-light mb-2">
+                                2 ноября 2022
+                            </div>
+                            <div class="item-news__title mb-3">
+                                Праздничные мероприятия в День народного единства в г. Челябинске
+                            </div>
+                            <div class="item-news__link">
+                                <a class="stretched-link" href="/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="iten-news position-relative">
+                            <div class="item-news__date fs-7 fw-light mb-2">
+                                2 ноября 2022
+                            </div>
+                            <div class="item-news__title mb-3">
+                                Праздничные мероприятия в День народного единства в г. Челябинске
+                            </div>
+                            <div class="item-news__link">
+                                <a class="stretched-link" href="/">Подробнее</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <a href="/" class="btn btn-outline-primary btn-arrow rounded-5">Все новости
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
     <script src="assets/js/bootstrap.bundle.min.js" ></script>
