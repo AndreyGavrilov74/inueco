@@ -12,39 +12,51 @@
     <span class="screen-darken"></span>
     <div id="top-nav" class="position-absolute mx-auto start-0 end-0">
         <div class="container">
-            <div class="d-flex align-items-center">
-                <div class="logo me-5">
-                    <img src="assets/image/logo.png" width="219" height="125" />
+            <div class="d-flex align-items-center justify-content-between">
+                <div class="logo me-5 mt-3 mt-lg-0">
+                    <img src="assets/image/logo.png" class="img-fluid" width="219" height="125" />
                 </div>
-                <div class="top w-100">
-                    <button data-trigger="navbar_main" class="d-lg-none btn btn-warning" type="button">  Show navbar </button>
-                    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-none">
+                <div class="top w-100 d-flex d-lg-block justify-content-end">
+                    <button data-trigger="navbar_main" class="d-lg-none btn-hamb me-4" type="button">  
+                        <svg class="">
+                            <use xlink:href="assets/image/sprite.svg#menu"></use>
+                        </svg>
+                    </button>
+                    <nav id="navbar_main" class="mobile-offcanvas navbar navbar-expand-lg navbar-dark bg-none px-4 px-lg-0">
                         <div class="d-flex flex-column w-100">
                             <div class="top-links py-3">
                                 <div class="row">
-                                    <div class="col-12 col-lg-6">
+                                    <div class="col-12 col-lg-6 order-lg-1 order-3 mb-4 mb-lg-0">
                                         <ul class="nav nav-links">
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">Почта</a>
+                                                <a class="nav-link px-0 px-lg-3" href="#">Почта</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">Сведения об образовательной организации</a>
+                                                <a class="nav-link px-0 px-lg-3" href="#">Сведения об образовательной организации</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="#">Абитуриенту</a>
+                                                <a class="nav-link px-0 px-lg-3" href="#">Абитуриенту</a>
                                             </li>
                                         </ul>
                                     </div>
-                                    <div class="col-12 col-lg-2 align-items-center d-flex">
+                                    <div class="col-12 col-lg-2 align-items-center d-flex order-lg-2 order-1 mb-4 mb-lg-0">
                                         <div class="d-flex align-items-center justify-content-center">
-                                            <a href="/" target="_blank" class="me-3" rel="nofollow"><img src="assets/image/vk.svg" alt="vk"></a>
-                                            <a href="/" target="_blank" rel="nofollow"><img src="assets/image/youtube.svg" alt="youtube"></a>
+                                                <a href="/" target="_blank" rel="nofollow">
+                                                    <svg class="icon-social me-3">
+                                                        <use xlink:href="assets/image/sprite.svg#vk"></use>
+                                                    </svg>
+                                                </a>                        
+                                                <a href="/" target="_blank" rel="nofollow">
+                                                    <svg class="icon-social me-3">
+                                                        <use xlink:href="assets/image/sprite.svg#youtube"></use>
+                                                    </svg>
+                                                </a>
                                         </div>
                                     </div>
-                                    <div class="col-12 col-lg-4">
+                                    <div class="col-12 col-lg-4 order-lg-3 order-2  mb-4 mb-lg-0">
                                         <div class="top-contact">
-                                            <div class="d-flex align-items-center justify-content-end">
-                                                <div class="top-contact__value me-4 text-end">
+                                            <div class="d-flex align-items-center justify-content-lg-end">
+                                                <div class="top-contact__value me-4 text-lg-end">
                                                     <div class="top-contact__phone">
                                                         +7 (351) 214-41-11
                                                     </div>
@@ -62,19 +74,145 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex justify-content-between ms-2 align-items-center">
-                                <ul class="navbar-nav main-menu">
+                            <div class="d-lg-flex justify-content-between ms-2 align-items-center">
+                                <ul class="navbar-nav main-menu mb-4 mb-lg-0">
                                     <li class="nav-item active"> <a class="nav-link" href="#">Университет </a> </li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Абитуриенту </a></li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Студенту </a></li>
                                     <li class="nav-item dropdown  has-megamenu">
                                         <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Наука </a>
                                         <div class="dropdown-menu megamenu" role="menu">
-                                            Nhis is content of megamenu. <br>
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                                                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                                                            consequat.
+                                            <div class="row gx-4 gy-4">
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class=" fw-semibold">                                                        
+                                                        Научные направления (школы)
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Социальные направления</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Технические направления</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Гуманитарные направления</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class=" fw-semibold">                                                        
+                                                        НИРС
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Деятельность СНО</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Состав СНО</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Методические рекомендации по НИРС</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Банк научно-исследовательских работ</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class=" fw-semibold">                                                        
+                                                        Конкурсы и конференции ЮУТУ
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Конференция Современная техника и технологии в электроэнергетике и на транспорте: задачи, проблемы, решения</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Конкурс социальной рекламы «Взгляд молодых»</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конференция Актуальные проблемы современной науки: взгляд молодых</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конкурс Научный прорыв</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конкурс «Изумрудная конфедератка»</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конкурс лучший преподаватель года</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конкурс на лучшую ВКР</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Конкурс на лучшее УМОД</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Школа молодого исследователя</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="fw-semibold">                                                        
+                                                        Конкурсы и конференции ЮУТУ
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Профессиональные олимпиады</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Олимпиада по экономике</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Олимпиада по государственному и муниципальному управлению</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Олимпиада по менеджменту и маркетингу</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Олимпиада по информационным технологиям</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Олимпиада по праву</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Олимпиада по строительству и архитектуре</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <div class="fw-semibold">                                                        
+                                                        Учебно-научные лаборатории
+                                                    </div>
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Лаборатория социально-экономических исследований</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Лаборатория информационных технологий</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 col-md-6 col-lg-4">
+                                                    <ul class="nav flex-column">
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Публикации, научные и учебные издания</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Результаты научно-исследовательской деятельности</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Договоры о партнерстве</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                          <a class="nav-link" href="#">Научно-исследовательская база</a>
+                                                        </li>
+                                                        <li class="nav-item">
+                                                            <a class="nav-link" href="#">Полезные ссылки</a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
                                     </li>
                                     <li class="nav-item"><a class="nav-link" href="#"> Журнал </a></li>
@@ -101,7 +239,7 @@
         </div>
     </div>
     <div class="slider-main position-relative">
-        <div class="item d-flex flex-column justify-content-end" style="background: url('assets/image/bg_slide.jpg') no-repeat center center;">
+        <div class="item d-flex flex-column justify-content-end" style="background: url('assets/image/bg_slide.jpg') no-repeat center center; background-size:cover ;">
             <div class="slide-content">
                 <div class="container">
                     <div class="row">
@@ -201,7 +339,7 @@
                                 Праздничные мероприятия в День народного единства в г. Челябинске
                             </div>
                             <div class="item-news__link">
-                                <a class="stretched-link" href="/">Подробнее</a>
+                                <a class="stretched-link fs-7" href="/">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -214,7 +352,7 @@
                                 Праздничные мероприятия в День народного единства в г. Челябинске
                             </div>
                             <div class="item-news__link">
-                                <a class="stretched-link" href="/">Подробнее</a>
+                                <a class="stretched-link fs-7" href="/">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -227,7 +365,7 @@
                                 Праздничные мероприятия в День народного единства в г. Челябинске
                             </div>
                             <div class="item-news__link">
-                                <a class="stretched-link" href="/">Подробнее</a>
+                                <a class="stretched-link fs-7" href="/">Подробнее</a>
                             </div>
                         </div>
                     </div>
@@ -240,18 +378,743 @@
                                 Праздничные мероприятия в День народного единства в г. Челябинске
                             </div>
                             <div class="item-news__link">
-                                <a class="stretched-link" href="/">Подробнее</a>
+                                <a class="stretched-link fs-7" href="/">Подробнее</a>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div>
-                    <a href="/" class="btn btn-outline-primary btn-arrow rounded-5">Все новости
+                    <a href="/" class="btn btn-outline-primary btn-arrow">Все новости
                     </a>
                 </div>
             </div>
         </div>
     </div>
+    <div id="fast-links" class="page-block pt-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="fast-link__block rounded-3 position-relative py-4 px-5">
+                        <div class="fast-link_title fs-3 fw-bold mb-4">
+                            Студентам
+                        </div>
+                        <nav class="nav flex-column">
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Личный кабинет обучающегося</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Расписание</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">В помощь студенту</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Расписание секций и кружков</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Стоимость обучения</a>
+                        </nav>
+                        <div class="position-absolute fast-link_image bottom-0 end-0" style="background: url(assets/image/bg1_1.png) no-repeat bottom right; background-size: contain;"></div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="fast-link__block rounded-3 position-relative py-4 px-5">
+                        <div class="fast-link_title fs-3 fw-bold mb-4">
+                            Поступающим
+                        </div>
+                        <nav class="nav flex-column">
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Приём заявления ON-Line</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Направления подготовки</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Стоимость обучения</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Правила приема</a>
+                            <a class="nav-link px-0 py-0 pb-2 text-dark" href="#">Задать вопрос</a>
+                        </nav>
+                        <div class="position-absolute fast-link_image bottom-0 end-0" style="background: url(assets/image/bg1_2.png) no-repeat bottom right; background-size: contain;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="direction" class="page-block pt-0">
+        <div class="container">
+            <h2 class="title-block mb-5">
+                Направления подготовки
+            </h2>
+            <div class="accordion accordion-flush" id="direction-accordeon">
+                <div class="accordion-item border-bottom border-light bg-transparent">
+                  <div class="accordion-header" id="flush-heading-1">
+                    <button class="accordion-button bg-transparent px-0 collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse1" aria-expanded="false" aria-controls="flush-collapse1">
+                        Экономика <span class="fw-light fs-6 ms-5">бакалавриат</span>
+                    </button>
+                    
+                  </div>
+                  <div id="flush-collapse1" class="accordion-collapse collapse" aria-labelledby="flush-heading1" data-bs-parent="#direction-accordeon">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Профиль
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Менеджмент организации
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Производственный менеджмент
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Форма обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Очная, заочная
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Срок обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    4 года (очная), 5 лет (заочная)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Стоимость обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    от 90 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе СОО (11 кл.)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Математика (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Обществознание (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    История (ЕГЭ)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе (НПО, СПО, ВО)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Основы экономики (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Информационные технологии (Компьютерное тестирование)
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <a href="#" class="btn btn-outline-primary">Подробнее</a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom border-light bg-transparent">
+                  <div class="accordion-header" id="flush-heading2">
+                    <button class="accordion-button bg-transparent px-0 collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse2" aria-expanded="false" aria-controls="flush-collapse2">
+                        Менеджмент <span class="fw-light fs-6 ms-5">бакалавриат</span>
+                    </button>
+                    
+                  </div>
+                  <div id="flush-collapse2" class="accordion-collapse collapse" aria-labelledby="flush-heading2" data-bs-parent="#direction-accordeon">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Профиль
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Менеджмент организации
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Производственный менеджмент
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Форма обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Очная, заочная
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Срок обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    4 года (очная), 5 лет (заочная)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Стоимость обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    от 90 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе СОО (11 кл.)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Математика (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Обществознание (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    История (ЕГЭ)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе (НПО, СПО, ВО)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Основы экономики (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Информационные технологии (Компьютерное тестирование)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom border-light bg-transparent">
+                  <div class="accordion-header" id="flush-heading3">
+                    <button class="accordion-button bg-transparent px-0 collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse3" aria-expanded="false" aria-controls="flush-collapse3">
+                        Государственное и муниципальное управление <span class="fw-light fs-6 ms-5">бакалавриат</span>
+                    </button>
+                    
+                  </div>
+                  <div id="flush-collapse3" class="accordion-collapse collapse" aria-labelledby="flush-heading3" data-bs-parent="#direction-accordeon">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Профиль
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Менеджмент организации
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Производственный менеджмент
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Форма обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Очная, заочная
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Срок обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    4 года (очная), 5 лет (заочная)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Стоимость обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    от 90 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе СОО (11 кл.)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Математика (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Обществознание (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    История (ЕГЭ)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе (НПО, СПО, ВО)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Основы экономики (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Информационные технологии (Компьютерное тестирование)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom border-light bg-transparent">
+                  <div class="accordion-header" id="flush-heading4">
+                    <button class="accordion-button bg-transparent px-0 collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse4" aria-expanded="false" aria-controls="flush-collapse4">
+                        Экономическая безопасность <span class="fw-light fs-6 ms-5">бакалавриат</span>
+                    </button>
+                    
+                  </div>
+                  <div id="flush-collapse4" class="accordion-collapse collapse" aria-labelledby="flush-heading4" data-bs-parent="#direction-accordeon">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Профиль
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Менеджмент организации
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Производственный менеджмент
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Форма обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Очная, заочная
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Срок обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    4 года (очная), 5 лет (заочная)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Стоимость обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    от 90 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе СОО (11 кл.)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Математика (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Обществознание (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    История (ЕГЭ)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе (НПО, СПО, ВО)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Основы экономики (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Информационные технологии (Компьютерное тестирование)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-bottom border-light bg-transparent">
+                  <div class="accordion-header" id="flush-heading5">
+                    <button class="accordion-button bg-transparent px-0 collapsed fs-5 fw-semibold" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse5" aria-expanded="false" aria-controls="flush-collapse5">
+                        Юриспруденция <span class="fw-light fs-6 ms-5">бакалавриат</span>
+                    </button>
+                    
+                  </div>
+                  <div id="flush-collapse5" class="accordion-collapse collapse" aria-labelledby="flush-heading5" data-bs-parent="#direction-accordeon">
+                    <div class="accordion-body">
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Профиль
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Менеджмент организации
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Производственный менеджмент
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Форма обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Очная, заочная
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Срок обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    4 года (очная), 5 лет (заочная)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Стоимость обучения
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    от 90 000 руб.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-wrap">
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе СОО (11 кл.)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Математика (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Обществознание (ЕГЭ)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    История (ЕГЭ)
+                                </div>
+                            </div>
+                            <div class="direction-info mb-3 me-5">
+                                <div class="fs-7 mb-2">
+                                    Экзамены на базе (НПО, СПО, ВО)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Русский язык (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Основы экономики (Компьютерное тестирование)
+                                </div>
+                                <div class="mb-2 fw-semibold">
+                                    Информационные технологии (Компьютерное тестирование)
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="about" class="page-block pt-0 position-relative">
+        <div class="container">
+            <h2 class="title-block mb-5">
+                Университет
+            </h2>
+            <div class="row">
+                <div class="col-12 col-lg-5 fs-5 fw-light">
+                    <p>Образовательное учреждение высшего образования "Южно-Уральский технологический университет" был основан 22 апреля 1996 года. Educational Institution of Higher Education "The South Ural University of Technology".
+                    </p>
+                    <p>Южно-Уральский технологический университет – это высококвалифицированные преподаватели. Учебный процесс обеспечивают доктора и кандидаты наук.</p>
+                    <p>Университет динамично развивается на основе лучших традиций высшего образования.</p>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="about-video rounded-3 position-relative">
+                        <img src="assets/image/video.jpg" width="712" height="398" class="img-fluid rounded-3" alt="">
+                        <div class="position-absolute top-50 start-50 translate-middle stretched-link">
+                            <img src="assets/image/youtube.svg" width="63" height="45" alt="">
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-logo"></div>
+    </div>
+    <div id="students-life" class="page-block pt-0">
+        <div class="container">
+            <h2 class="title-block mb-5">
+                Студенческая жизнь
+            </h2>
+            <div class="row gx-5 gy-5 mb-5">
+                <div class="col-12 col-lg-6">
+                    <h3 class="fs-3 fw-bold mb-4">
+                        Спорт
+                    </h3>
+                    <p class="fs-6">
+                        C 2012 года эффективно действует орган студенческого самоуправления — общественное объединение Студенческий спортивный клуб «Хаски» (далее — ССК «Хаски»), который одним из приоритетных направлений определяет формирование у студенческой молодежи Университета ценностного отношения к своему здоровью, внутренней потребности и мотивации личности в здоровом образе жизни; формирование установки на систематические занятия физической культурой и спортом; организацию и проведение физкультурно-спортивных и оздоровительных мероприятий; участие студентов в спортивных соревнованиях различного уровня; профилактику асоциального поведения и др.
+                    </p>
+                    <p class="fs-6">
+                        В состав ССК «Хаски» входят:
+                    </p>
+                    <ul class="mb-3">
+                        <li>волейбольный клуб ССК «Хаски», </li>
+                        <li>баскетбольный клуб ССК «Хаски», </li>
+                        <li>футбольный клуб ССК «Хаски», </li>
+                        <li>клуб болельщиков ССК «Хаски».</li>
+                    </ul>
+                    <a href="#" class="fs-6">Подробнее</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-6"><img src="assets/image/sport1.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sport2.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sport3.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sport4.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 gy-5 mb-5">
+                <div class="col-12 col-lg-6 order-lg-2 fs-6">
+                    <h3 class="fs-3 fw-bold mb-4">
+                        Наука
+                    </h3>
+                    <p>Научно-исследовательская работа обучающихся (НИРС) в ЮУТУ является неотъемлемой частью подготовки квалифицированных специалистов с высшим образованием и нацелена на повышение качества образовательного процесса.</p>
+                    <p>НИРС является важнейшим средством выявления и целевого отбора перспективной студенческой молодёжи для последующего закрепления ее в системе научно-педагогических кадров, а также для обеспечения научной и научно-педагогической деятельности в ЮУТУ.</p>
+                    <p>НИРС является средством освоения в процессе обучения навыков профессионально-творческой деятельности, методов и приемов индивидуального и коллективного выполнения научно-исследовательских работ, развития способностей к научному творчеству.</p>
+                    <a href="#" class="fs-6">Подробнее</a>
+                </div>
+                <div class="col-12 col-md-6 order-lg-1">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-6"><img src="assets/image/sc1.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sc2.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sc3.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/sc4.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 gy-5 mb-5">
+                <div class="col-12 col-lg-6 fs-6">
+                    <h3 class="fs-3 fw-bold mb-4">
+                        Творчество
+                    </h3>
+                    <p>Коллектив современного танца «Энергия» был создан в 2008 году. Руководитель и педагог коллектива Грибанова Татьяна Александровна. Коллектив регулярно участвует в мероприятиях Университета, а также выезжает на различные фестивали и конкурсы (XV Международный танцевальный фитнес-форум и т.д.). Неоднократно становился лауреатом городских, всероссийских и международных конкурсов.</p>
+                    <p>Вокальная студия ЮУТУ «Созвездие» была основана в 2010 году. Руководитель и преподаватель по вокалу — Яковлева Любовь Викторовна.</p>
+                    <p>На базе вокальной студии «Созвездие» успешно ведут работу два вокальных коллектива: вокальный ансамбль «7Небо» и ансамбль народной песни «Оберег». Ученики студии являются участниками всех студенческих мероприятий и концертов различного уровня.</p>
+                    <a href="#" class="fs-6">Подробнее</a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-6"><img src="assets/image/tv1.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/tv2.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/tv3.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/tv4.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row gx-5 gy-5 mb-5">
+                <div class="col-12 col-lg-6 order-lg-2 fs-6">
+                    <h3 class="fs-3 fw-bold mb-4">
+                        Студенческие отряды
+                    </h3>
+                    <p>Российские студенческие отряды – крупнейшая молодежная организация страны, которая обеспечивает временной трудовой занятостью студентов, а также занимается гражданским и патриотическим воспитанием, развивает творческий и спортивный потенциал молодежи.</p>
+                    <p>В Южно-Уральском технологическом университете есть свой Штаб студенческих отрядов (ШСО ЮУТУ), который был основан 15 марта 2010 года.</p>
+                    <p>На сегодняшний день ШСО ЮУТУ курирует четыре направления:</p>
+                    <ul class="mb-3">
+                        <li>педагогическое;</li>
+                        <li>строительное;</li>
+                        <li>отряд проводников;</li>
+                        <li>сервисное.</li>
+                    </ul>
+                    <a href="#" class="fs-6">Подробнее</a>
+                </div>
+                <div class="col-12 col-md-6 order-lg-1">
+                    <div class="row gx-5 gy-5">
+                        <div class="col-6"><img src="assets/image/stud1.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/stud2.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/stud3.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                        <div class="col-6"><img src="assets/image/stud4.jpg" class="img-fluid" width="290" height="247" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="history" class="page-block pt-0">
+        <div class="container">
+            <h2 class="title-block mb-5">
+                История успеха
+            </h2>
+            <div class="row mb-5">
+                <div class="col-12 col-lg-4">
+                    <div class="item-card history-main position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/history1.jpg) center center no-repeat; background-size: cover;">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">03 ноября 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold mb-2">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Шкрабов Николай Игоревич</a>
+                            </div>
+                            <div class="item-card__desc">
+                                Дизайн, направленность (профиль) Графический дизайн
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="item-card history-main position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/history2.jpg) center center no-repeat; background-size: cover;">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">24 июня 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold mb-2">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Новикова Анна Александровна</a>
+                            </div>
+                            <div class="item-card__desc">
+                                Экономическая безопасность
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <div class="item-card history-main position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/history3.jpg) center center no-repeat; background-size: cover;">
+                        <div class="item-card__text text-white">
+                            <div class="item-card__date fs-7 fw-light">23 июня 2022</div>
+                            <div class="item-card__title fs-6 fw-semibold mb-2">
+                                <a href="/" class="stretched-link text-white text-decoration-none">Воронин Максим Андреевич</a>
+                            </div>
+                            <div class="item-card__desc">
+                                «Архитектура», профиль «Архитектурное проектирование»
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="/" class="btn btn-outline-primary btn-arrow">Все истории
+            </a>
+        </div>
+    </div>
+    <div id="banners" class="page-block pt-0">
+        <div class="container">
+            <div class="row gx-5 gy-5">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner1.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner2.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner3.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner4.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner5.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <img src="assets/image/banner6.png" width="288" height="162" class="img-fluid" alt=""/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img src="assets/image/logo-footer.png" width="219" height="125" class="img-fluid mb-4" alt="">
+                    <p class="mb-4">©2022. Южно-Уральский технологический университет.</p>
+                    <p class="mb-4">Любое использование материалов возможно только при условии активной ссылки на сайт: www.inueco.ru</p>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="mb-3">+7 (351) 214-41-11 (общий)</div>
+                    <div class="mb-3">
+                        <div class="fw-semibold fw-2">
+                            г.Челябинск, Комсомольский пр, 113а
+                        </div>
+                        <div class="fw-2 fs-7">
+                            +7 (351) 214-41-11
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="fw-semibold fw-2">
+                            г.Челябинск, ул. Кожзаводская 1
+                        </div>
+                        <div class="fw-2 fs-7">
+                            +7 (351) 731-01-10
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="fw-semibold fw-2">
+                            г.Челябинск, ул. Комаровского 9а
+                        </div>
+                        <div class="fw-2 fs-7">
+                            +7 (351) 726-22-11
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        feedbacksite@inueco.ru
+                    </div>
+                    <div class="fs-6 mb-4 fw-semibold">
+                        Приемная комиссия
+                    </div>
+                    <div>
+                        <div class="fs-7 mb-2">Режим работы</div>
+                        <div>Пн-Пт: 8:30 - 7:00<br/>Сб-Вс: выходной</div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="d-flex text-white mb-4">
+                        <a href="/">
+                            <svg class="icon-social me-3">
+                                <use xlink:href="assets/image/sprite.svg#vk"></use>
+                            </svg>
+                        </a>                        
+                        <a href="/">
+                            <svg class="icon-social me-3">
+                                <use xlink:href="assets/image/sprite.svg#youtube"></use>
+                            </svg>
+                        </a>                        
+                    </div>
+                    <nav class="nav flex-column">
+                        <a class="nav-link px-0 text-white" href="#">Уральский Региональный Колледж</a>
+                        <a class="nav-link px-0 text-white" href="#">Вход в почту</a>
+                        <a class="nav-link px-0 text-white" href="#">Написать нам</a>
+                        <a class="nav-link px-0 text-white" href="#">Контакты</a>
+                        <a class="nav-link px-0 text-white" href="#">Абитуриенту</a>
+                        <a class="nav-link px-0 text-white" href="#">Студенту</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
     <script src="assets/js/bootstrap.bundle.min.js" ></script>
     <script src="assets/js/script.js" ></script>
 </body>

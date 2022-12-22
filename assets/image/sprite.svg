@@ -17,5 +17,8 @@
 	<symbol id="arrow-btn" viewBox="0 0 22 7" fill="none" xmlns="http://www.w3.org/2000/svg">
 		<path d="M21.2828 3.78284C21.4391 3.62663 21.4391 3.37337 21.2828 3.21716L18.7373 0.671571C18.581 0.515362 18.3278 0.515362 18.1716 0.671571C18.0154 0.827781 18.0154 1.08105 18.1716 1.23726L20.4343 3.5L18.1716 5.76274C18.0154 5.91895 18.0154 6.17222 18.1716 6.32843C18.3278 6.48464 18.581 6.48464 18.7373 6.32843L21.2828 3.78284ZM3.49691e-08 3.9L21 3.9L21 3.1L-3.49691e-08 3.1L3.49691e-08 3.9Z" />
 	</symbol>
-
+	<symbol id="youtube2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+	</symbol>
+	<symbol id="menu" xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></symbol>
 </svg>
