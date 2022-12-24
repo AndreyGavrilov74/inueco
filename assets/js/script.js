@@ -56,6 +56,7 @@ document.addEventListener("DOMContentLoaded", function(){
  
         if ( ! withinBoundaries ) {
             otherContact.classList.add('d-none');
+            contactFirst.classList.toggle('active');
         }
     })
     otherContact.addEventListener('click', function(e) {

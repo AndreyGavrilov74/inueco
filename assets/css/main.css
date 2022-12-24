@@ -4,6 +4,7 @@
 	--text: #333;
 	--font: Montserrat, sans-serif;
 	--themeColor: #2A5C5D;
+    --themeColorSecond: #BCDDEC;
     --top-nav-color: #fff;
 	--top-nav-second: #dedede;
 	--bs-link-color: var(--themeColor);
@@ -183,12 +184,16 @@ a:hover {
     font-weight: 600;
     padding-right: 1rem!important;
 }
-
 .icon-action {
 	width: 25px;
 	height: 25px;
 	color: #fff;
 	fill: #fff;
+}
+.other-page-nav, .other-page-nav .nav-link, .other-page-nav .top-contact__value, .other-page-nav .icon-action, .other-page-nav .icon-social, .other-page-nav .arrow-down svg {
+    color:var(--text);
+    fill: var(--text);
+    stroke: var(--text);
 }
 .slider-counter {
 	bottom: 80px;
@@ -233,7 +238,7 @@ a:hover {
 .navbar .megamenu {
     box-shadow: 0px 75px 30px rgba(39, 38, 38, 0.021), 0px 42px 25px rgba(39, 38, 38, 0.06), 0px 19px 19px rgba(39, 38, 38, 0.11), 0px 5px 10px rgba(39, 38, 38, 0.12), 0px 0px 0px rgba(39, 38, 38, 0.13);
     padding: 2rem;
-    border-color: #cbcbcb;
+    border-color: #fafafa;
 }
 .megamenu .nav-link {
     color: var(--themeColor);
@@ -443,3 +448,24 @@ footer {
 	font-size: 2.6rem;
 	font-weight: 800;
 }
+.top-gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60vh;
+    min-height: 500px;
+    width: 100%;
+    background: linear-gradient(180deg, #F4F4F4 0%, #FDFDFE 100%);
+    z-index: -1;
+}
+.subpage-list {
+    background: var(--themeColorSecond);
+}
+    .subpage-list .nav-link {
+        color: var(--text)!important;
+        text-decoration: underline!important;
+    }
+        .subpage-list .nav-link:hover {
+            color: var(--bs-link-hover-color)!important;
+            text-decoration: none!important;
+        }
