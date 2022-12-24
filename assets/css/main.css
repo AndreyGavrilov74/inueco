@@ -30,6 +30,9 @@ a:hover {
 .offcanvas-header { 
     display:none; 
 }
+.bg-light {
+	background-color: #f7f7f7!important;
+}
 .border-light {
     border-color: #E8E8E8!important;
 }
@@ -118,12 +121,32 @@ a:hover {
 }
 .slide-content {
     padding-bottom: 180px;
+	z-index: 12;
 }
 .slide-title {
     font-size: 2rem;
     font-weight: 800;
     line-height: 1.1;
     color: #fff;
+}
+.video-slider {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%; 
+	min-height: 100%;
+}
+.video-slider[poster] {
+	object-fit:cover;
+}
+.bg-cover:after {
+	background: linear-gradient(180deg, rgba(27, 27, 27, 0.7) 0%, rgba(27, 27, 27, 0.4) 100%);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	content:'';
 }
 .nav-links .nav-link {
     font-size: .9rem;
@@ -136,6 +159,9 @@ a:hover {
 }
 .top-contact {
     color: var(--top-nav-color);
+}
+.arrow-down {
+	transition: .3s;
 }
 .arrow-down svg {
     stroke: #fff;
@@ -166,6 +192,7 @@ a:hover {
 }
 .slider-counter {
 	bottom: 80px;
+	z-index:4;
 }
 .arrow-slider {
 	width:40px;
@@ -217,6 +244,9 @@ a:hover {
     font-weight: 400;
     margin: 0;
 }
+.swiper-pagination-custom {
+	width: inherit;
+}
 .slider-num__progress {
 	width: 60px;
 	height: 2px;
@@ -252,6 +282,7 @@ a:hover {
     }
     .slide-content {
         padding-bottom: 80px;
+
     }
 }
 .page-block {
@@ -292,6 +323,7 @@ a:hover {
 	.item-card:first-child {
 		grid-row: 1/1;
 		height: 100%;
+		min-height: 250px;
 	}
 	.item-card__text {
 		padding: 24px 30px;
@@ -387,7 +419,7 @@ a:hover {
     height: 64px;
 }
 .history-main {
-    min-height: 450px;
+    min-height: 450px!important;
 }
 footer {
     background: linear-gradient(143.65deg, #2A5C5D 21.19%, #285758 81.37%);
@@ -397,4 +429,17 @@ footer {
     width: 28px;
     height: 28px;
     fill: #fff;
+}
+.first-contact {
+	cursor:pointer;
+}
+	.first-contact.active .arrow-down {
+		transform:rotate(180deg);
+	}
+.other-contact {
+	z-index:4;
+}
+#content h1 {
+	font-size: 2.6rem;
+	font-weight: 800;
 }

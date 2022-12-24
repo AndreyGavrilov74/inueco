@@ -43,4 +43,22 @@ document.addEventListener("DOMContentLoaded", function(){
         close_offcanvas();
     });
     
+    const contactFirst = document.querySelector('.first-contact');
+    const otherContact = document.querySelector('.other-contact');
+
+    contactFirst.addEventListener('click', function() {
+        contactFirst.classList.toggle('active');
+        otherContact.classList.toggle('d-none');
+        
+    })
+    document.addEventListener( 'click', (e) => {
+        const withinBoundaries = e.composedPath().includes(contactFirst);
+ 
+        if ( ! withinBoundaries ) {
+            otherContact.classList.add('d-none');
+        }
+    })
+    otherContact.addEventListener('click', function(e) {
+        e.stopPropagation();
+    })
 }); 

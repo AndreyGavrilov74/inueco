@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Главная</title>
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/swiper-bundle.min.css" rel="stylesheet">
     <link href="assets/css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -54,7 +55,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-lg-4 order-lg-3 order-2  mb-4 mb-lg-0">
-                                        <div class="top-contact">
+                                        <div class="top-contact position-relative first-contact">
                                             <div class="d-flex align-items-center justify-content-lg-end">
                                                 <div class="top-contact__value me-4 text-lg-end">
                                                     <div class="top-contact__phone">
@@ -70,6 +71,24 @@
                                                     </svg>
                                                 </div>
                                             </div>
+                                                <div class="position-absolute other-contact d-none start-0 w-100 top-100 p-4 bg-white border rounded-2 text-body mt-3">
+                                                    <div class="top-contact__value mb-3">
+                                                        <div class="top-contact__phone">
+                                                            +7 (351) 731-01-10
+                                                        </div>
+                                                        <div class="top-contact__address">
+                                                            г.Челябинск, ул. Кожзаводская 1
+                                                        </div>
+                                                    </div>
+                                                    <div class="top-contact__value">
+                                                        <div class="top-contact__phone">
+                                                            +7 (351) 726-22-11
+                                                        </div>
+                                                        <div class="top-contact__address">
+                                                            г.Челябинск, ул. Комаровского 9а
+                                                        </div>
+                                                    </div>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
@@ -238,19 +257,38 @@
             </div>
         </div>
     </div>
-    <div class="slider-main position-relative">
-        <div class="item d-flex flex-column justify-content-end" style="background: url('assets/image/bg_slide.jpg') no-repeat center center; background-size:cover ;">
-            <div class="slide-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-8 col-lg-6">
-                            <div class="slide-title">
-                                Южно-Уральский технологический университет
+    <div class="slider-main position-relative swiper">
+        <div class="swiper-wrapper">
+            <div class="item bg-cover swiper-slide d-flex flex-column justify-content-end" style="background: linear-gradient(180deg, rgba(27, 27, 27, 0.7) 0%, rgba(27, 27, 27, 0.4) 100%); background-size:cover;">
+                <div class="slide-content position-relative ">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6">
+                                <div class="slide-title">
+                                    Южно-Уральский технологический университет
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>            
+                    <video autoplay="" muted="" loop="" class="video-slider" poster="assets/image/preview.jpg">
+                        <source src="https://inueco.ru/assets/files/inueco2.mp4" type="video/mp4">
+                        <source src="https://inueco.ru/assets/files/inueco2.webm" type="video/webm">                        
+                    </video> 
+            </div>
+            <div class="item swiper-slide d-flex flex-column justify-content-end" style="background: url('assets/image/bg_slide.jpg') no-repeat center center; background-size:cover ;">
+                <div class="slide-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-md-8 col-lg-6">
+                                <div class="slide-title">
+                                    Южно-Уральский технологический университет 2
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>            
+            </div>
         </div>
         <div class="slider-counter position-absolute start-0 end-0">
             <div class="container">
@@ -976,7 +1014,7 @@
             <h2 class="title-block mb-5">
                 История успеха
             </h2>
-            <div class="row mb-5">
+            <div class="row mb-5 gx-4 gy-4">
                 <div class="col-12 col-lg-4">
                     <div class="item-card history-main position-relative d-flex align-items-end rounded-3" style="background: linear-gradient(180deg, rgba(38, 38, 38, 0.2) 60%, rgba(24, 24, 24, 0.9) 100%), url(assets/image/history1.jpg) center center no-repeat; background-size: cover;">
                         <div class="item-card__text text-white">
@@ -1116,6 +1154,8 @@
         </div>
     </footer>
     <script src="assets/js/bootstrap.bundle.min.js" ></script>
+    <script src="assets/js/swiper-bundle.min.js" ></script>
+    <script src="assets/js/slider.js" ></script>
     <script src="assets/js/script.js" ></script>
 </body>
 </html>
