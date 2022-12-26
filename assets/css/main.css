@@ -190,10 +190,23 @@ a:hover {
 	color: #fff;
 	fill: #fff;
 }
-.other-page-nav, .other-page-nav .nav-link, .other-page-nav .top-contact__value, .other-page-nav .icon-action, .other-page-nav .icon-social, .other-page-nav .arrow-down svg {
+.other-page-nav, .other-page-nav .nav-link, .other-page-nav .top-contact__value, .other-page-nav .icon-social  {
     color:var(--text);
-    fill: var(--text);
-    stroke: var(--text);
+    fill: var(--text); 
+}
+.other-page-nav .icon-action {
+	fill: var(--themeColor);
+	opacity: .8;
+}
+.other-page-nav .icon-social.vk {
+	fill:#2f70d2;
+}
+.other-page-nav .icon-social.youtube {
+	fill: #b63e3e;
+}
+.other-page-nav .arrow-down svg {
+	stroke: var(--text);
+	opacity: .7;
 }
 .slider-counter {
 	bottom: 80px;
@@ -241,13 +254,38 @@ a:hover {
     border-color: #fafafa;
 }
 .megamenu .nav-link {
-    color: var(--themeColor);
+    color: #474747;
     padding: 5px 0;
     padding-left: 0!important;
     padding-right: 0!important;
     font-size: 14px;
     font-weight: 400;
     margin: 0;
+}
+.megamenu .nav-link:hover {
+	color: var(--text)
+}
+.dropdown-toggle::after {
+	display: inline-block;
+	margin-left: .3em!important;
+	content: "";
+	background: url("data:image/svg+xml,%3Csvg width='16' heigth='9' viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' fill='none' d='M1 0.5L8 7.5L15 0.5' stroke='%23fff'/%3E%3C/svg%3E") no-repeat;
+	background-size:contain;
+	width: 12px;
+	height: 7px;
+	margin: 0px;
+	border: 0;
+	vertical-align: .1em;
+	transition: .2s;
+}
+.other-page-nav .dropdown-toggle::after {
+	background: url("data:image/svg+xml,%3Csvg width='16' heigth='9' viewBox='0 0 16 9' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath xmlns='http://www.w3.org/2000/svg' fill='none' d='M1 0.5L8 7.5L15 0.5' stroke='%23333'/%3E%3C/svg%3E") no-repeat;
+	background-size:contain;
+	width: 12px;
+	height: 7px;
+}
+.dropdown-toggle.show::after {
+	transform: rotate(180deg);
 }
 .swiper-pagination-custom {
 	width: inherit;
@@ -455,7 +493,7 @@ footer {
     height: 60vh;
     min-height: 500px;
     width: 100%;
-    background: linear-gradient(180deg, #F4F4F4 0%, #FDFDFE 100%);
+    background: linear-gradient(180deg, #EEEEEE 0%, #FDFDFE 100%);
     z-index: -1;
 }
 .subpage-list {
@@ -469,3 +507,10 @@ footer {
             color: var(--bs-link-hover-color)!important;
             text-decoration: none!important;
         }
+.sidebar-menu .nav-item.active {
+	background: var(--themeColor);
+}
+.active>.page-link, .page-link.active {
+	background-color: var(--themeColor);
+	border-color: var(--themeColor);
+}
