@@ -22,6 +22,9 @@ body.offcanvas-active{
 a:hover {
 	text-decoration: none;
 }
+h2, h3 {
+	font-weight: 600;
+}
 .fs-6 {
 	font-size: 1.1rem!important;
 }
@@ -507,9 +510,19 @@ footer {
             color: var(--bs-link-hover-color)!important;
             text-decoration: none!important;
         }
+.sidebar-menu .nav-item {
+	transition: .2s
+}
 .sidebar-menu .nav-item.active {
 	background: var(--themeColor);
 }
+	.sidebar-menu .nav-item:hover {
+		background: var(--themeColorSecond);
+		
+	}
+		.sidebar-menu .nav-item:hover>.nav-link {
+			color: var(--text);
+		}
 .active>.page-link, .page-link.active {
 	background-color: var(--themeColor);
 	border-color: var(--themeColor);
